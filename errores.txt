@@ -1,0 +1,26 @@
+real c = 4.2 %declaracion correcta
+real b = 'a' % declaracion correcta
+entero c = 2 % error, la variable ya está declarada
+e = c + b % error, la variable e no está declarada
+real e = c + b %correcta
+booleano z = cierto and cierto > falso % error cierto > falso
+%% errores en vectores
+vector entero vector1[10] % correcta
+vector1 = 3 % error no hay índice
+vector1[3] = 3 % correcto
+entero c = 2 % correcto
+c = vector1 + 3 % error, no hay índice del vector
+c = vector1[3] + 3 % correcto
+%% Errores en registros
+REGISTRO registro1 {real p, q; entero r, s; vector caracter palabra[8];} % correcto
+registro1 prueba1 % correcto
+prueba1 = 3 % error, no se indica un atributo
+prueba1.p = 100.34 % correcto
+c = prueba1 + 2 % error, no se indica el atributo
+prueba1.palabra[3] = 'a'
+caracter letra
+letra = prueba1.palabra % error
+letra = prueba1.palabra[3] + 'b' % error
+letra = prueba1.palabra[3] % correcto
+
+%% No se prueban todos los errores porque son demasiados, por lo tanto solo se prueban algunos errores 

@@ -1,0 +1,28 @@
+ENTERO re1 = 2
+ENTERO re2 = 3
+BOOLEANO bo1 = 6 < 2
+BOOLEANO bo2 = cierto
+
+% Sentencia condicional de control de flujo
+SI re2==3 OR bo1 AND bo2 % condición
+ENTONCES % cuerpo cuando la condición es verdadera
+ re2 = re2-3
+SINO % cuerpo cuando la condición es falsa
+ re2 = 10-re1*re1
+FINSI % fin de la sentencia 
+
+
+% Bucle condicional
+MIENTRAS re2<7 AND bo2 %condidion del bucle
+SI bo2==falso % condición
+ENTONCES
+	bo2 = 5 < 2
+SINO % cuerpo cuando la condición es falsa
+	ENTERO re3 = 1
+FINSI % fin de la sentencia
+re2 = re2 + 1
+FINMIENTRAS % Fin del bucle condicional
+
+REAL re4 = 5.6
+
+

@@ -1,0 +1,34 @@
+REAL re1
+ENTERO en2 = 6 
+BOOLEANO bo3 = 5 < 3 % se asigna el resultado de una expresión
+CARACTER ca4 = 'h' % variable de tipo carácter, y su literal
+REGISTRO CIRCULO {REAL cx, cy, radio; % definición de tipo compuesto
+ CARACTER color;} % definición de tipo compuesto
+CIRCULO circ1 % declaración variable registro no permite
+ % asignación al mismo tiempo que la declaracion
+
+%%% Expresiones
+5 + 6 % operacion
+re1 = 3.7 % asignación simple
+bo3 = re1 < 7 AND 5.46+7*en2 > 0 | falso % asignacion compleja
+circ1.cx = 0.0 % campo de variable registro
+circ1.cy = 0.0 % campo de variable registro
+circ1.radio = 10.0 % campo de variable registro
+circ1.color = 'r' % campo de variable registro
+
+% declaramos un vector
+VECTOR REAL vector_reales [4]
+% cambiamos los valores de sus elementos
+vector_reales[0] = 4
+vector_reales[1] = 3.2
+vector_reales[3] = 56
+
+% declaramos un registros con un atributo registro
+REGISTRO COMPRA {REAL total;
+ VECTOR ENTERO vector_compra[5];}
+COMPRA micompra
+
+% cambiamos los valores de los atriburos de micompra
+micompra.total = 133.2
+micompra.vector_compra[0] = 3
+micompra.vector_compra[2] = 24
